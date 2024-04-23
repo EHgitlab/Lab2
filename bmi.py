@@ -1,3 +1,5 @@
+wt = int(input("Enter your weight \n"))
+ht = float(input("Enter your height \n"))
 def calculate_bmi(height, weight):
     Height = "Height = " + str(height)
     Weight = "Weight = " + str(weight)
@@ -17,7 +19,7 @@ def conditional_queue(Bmi):
         return "Over Weight"
 
 
-Bmi = calculate_bmi(weight = 70, height = 1.73)
+Bmi = calculate_bmi(weight = wt, height = ht)
 conditional_queue(Bmi)
 
 ans = conditional_queue(Bmi)
