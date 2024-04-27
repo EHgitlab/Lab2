@@ -23,6 +23,10 @@ def sort_temperature(listoNume):
     listoNume.sort()
     return listoNume
 
+def calc_median_temperature(listoNume):
+    med1 = median(listoNume)
+    return med1
+
 def main():
     listoNume = get_user_input(input())
     display_main_menu(listoNume)
@@ -32,6 +36,8 @@ def main():
     print(f"Minimum and Maximum: {list(temp)}")
     sort1 = sort_temperature(listoNume)
     print("Sorted list:", sort1)
+    median1 = calc_median_temperature(listoNume)
+    print("Median: " + str(median1))
 
 if __name__ == "__main__":
     main()
