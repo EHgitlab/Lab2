@@ -12,11 +12,11 @@ def calculate_bmi(height, weight):
 
 def conditional_queue(Bmi):
     if Bmi < 18.5:
-        return "Under Weight"
+        return -1
     elif Bmi >= 18.5 and Bmi <= 25:
-        return "Normal Weight"
+        return 0
     elif Bmi > 25.0:
-        return "Over Weight"
+        return 1
 
 
 Bmi = calculate_bmi(weight = wt, height = ht)
