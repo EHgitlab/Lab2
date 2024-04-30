@@ -18,7 +18,6 @@ def conditional_queue(Bmi):
     elif Bmi > 25.0:
         return 1
 
-
 Bmi = calculate_bmi(weight = wt, height = ht)
 conditional_queue(Bmi)
 
